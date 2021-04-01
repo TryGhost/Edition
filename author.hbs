@@ -57,7 +57,4 @@
     </main>
 </div>
 
-{{#contentFor "body_class"}}{{#if next}} paged-next{{/if}}
-  {{#if @member}} logged-in
-  {{/if}}
-{{/contentFor}}
+{{#contentFor "body_class"}}{{#if next}} paged-next{{/if}}{{#if @member}} logged-in{{/if}}{{/contentFor}}
