@@ -1,9 +1,7 @@
 {{!< default}}
 
 <div class="content-area">
-    <main class="site-main">
-        {{> "feed-header"}}
-        
+    <main class="site-main">        
         {{#author}}
             <section class="taxonomy container small">
                 {{#if profile_image}}
@@ -46,7 +44,9 @@
                 </header>
             </section>
         {{/author}}
-
+        
+        {{> "feed-header"}}
+        
         <div class="post-feed container medium">
             {{#foreach posts}}
                 {{> "loop"}}
