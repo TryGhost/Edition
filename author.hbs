@@ -1,7 +1,7 @@
 {{!< default}}
 
 <div class="content-area">
-    <main class="site-main">
+    <main class="site-main">        
         {{#author}}
             <section class="taxonomy container small">
                 {{#if profile_image}}
@@ -44,7 +44,9 @@
                 </header>
             </section>
         {{/author}}
-
+        
+        {{> "feed-header"}}
+        
         <div class="post-feed container medium">
             {{#foreach posts}}
                 {{> "loop"}}
@@ -55,4 +57,4 @@
     </main>
 </div>
 
-{{#contentFor "body_class"}}{{#if @site.logo}}{{#if @site.cover_image}} with-alt-header{{/if}}{{/if}}{{/contentFor}}
+{{#contentFor "body_class"}}{{#if next}} paged-next{{/if}}{{#if @member}} logged-in{{/if}}{{/contentFor}}
