@@ -57,4 +57,4 @@
     </main>
 </div>
 
-{{#contentFor "body_class"}}{{#if @site.logo}}{{#if @site.cover_image}} with-alt-header{{/if}}{{/if}}{{/contentFor}}
+{{#contentFor "body_class"}}{{#if next}} paged-next{{/if}}{{#if @site.cover_image}}{{#if @member}} with-alt-header{{else}} with-full-cover{{/if}}{{/if}}{{#if @member}} logged-in{{/if}}{{/contentFor}}
