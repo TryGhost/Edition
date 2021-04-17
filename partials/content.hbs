@@ -9,7 +9,7 @@
                 </span>
 
                 <span class="single-meta-item single-meta-length">
-                    {{reading_time}}
+                    {{reading_time minute=(t "1 min read") minutes=(t "% min read")}}
                 </span>
 
                 {{#primary_tag}}
@@ -55,7 +55,7 @@
 
             <div class="single-footer-middle">
                 <div class="single-footer-top">
-                    <h3 class="single-footer-title">Published by:</h3>
+                    <h3 class="single-footer-title">{{t "Published by"}}:</h3>
                     <div class="author-list">
                         {{#foreach authors}}
                             <div class="author-image-placeholder u-placeholder square">
@@ -73,13 +73,13 @@
                             href="https://www.facebook.com/sharer.php?u={{url absolute="true"}}"
                             target="_blank" rel="noopener noreferrer">
                             {{> icons/facebook}}
-                            Share
+                            {{t "Share" }}
                         </a>
                         <a class="share-link share-link-twitter"
                             href="https://twitter.com/intent/tweet?url={{url absolute="true"}}&text={{encode title}}"
                             target="_blank" rel="noopener noreferrer">
                             {{> icons/twitter}}
-                            Tweet
+                            {{t "Tweet" }}
                         </a>
                     </div>
                 </div>
