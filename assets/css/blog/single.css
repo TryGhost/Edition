@@ -101,17 +101,6 @@
     flex-direction: column;
 }
 
-.single-footer-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.single-footer-title {
-    margin-bottom: 1rem;
-    font-size: 1.8rem;
-}
-
 .single-footer-bottom {
     margin-top: 2rem;
 }
