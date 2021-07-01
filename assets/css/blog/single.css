@@ -3,6 +3,25 @@
     text-align: center;
 }
 
+.single-header-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-header-title {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.single-header-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
 .single-meta {
     margin-bottom: 1rem;
     color: var(--secondary-text-color);
