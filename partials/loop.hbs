@@ -7,8 +7,8 @@
             {{date published_at format="DD"}}
         </div>
     </div>
-    <div class="feed-image u-placeholder rectangle">
-        {{#if feature_image}}
+    {{#if feature_image}}
+        <div class="feed-image u-placeholder rectangle">
             <img class="u-object-fit"
                 srcset="{{> srcset}}"
                 sizes="(min-width: 576px) 160px, 90vw"
@@ -16,8 +16,8 @@
                 alt="{{#if feature_image_alt}}{{feature_image_alt}}{{else}}{{title}}{{/if}}"
                 loading="lazy"
             >
-        {{/if}}
-    </div>
+        </div>
+    {{/if}}
     <div class="feed-wrapper">
         <h2 class="feed-title">{{title}}</h2>
         {{#if excerpt}}
