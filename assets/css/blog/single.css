@@ -24,6 +24,10 @@
     letter-spacing: -0.1rem;
 }
 
+.font-alt .single-title {
+    font-family: var(--font-serif);
+}
+
 .single-excerpt {
     margin-top: 2rem;
     font-size: 1.8rem;

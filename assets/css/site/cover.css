@@ -56,6 +56,10 @@
     font-weight: 700;
 }
 
+.font-alt .cover-description {
+    font-family: var(--font-serif);
+}
+
 .with-full-cover .cover-description {
     color: #fff;
 }

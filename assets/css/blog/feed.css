@@ -159,6 +159,10 @@
     white-space: normal;
 }
 
+.font-alt .feed-title {
+    font-family: var(--font-serif);
+}
+
 .feed-excerpt {
     margin-top: 0.8rem;
     line-height: 1.4;
