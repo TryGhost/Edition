@@ -12,7 +12,7 @@
     {{ghost_head}}
 </head>
 
-<body class="{{body_class}}{{{block "body_class"}}} {{#match @custom.typography "=" "Elegant serif"}}font-alt{{/match}}"">
+<body class="{{body_class}}{{{block "body_class"}}} {{#match @custom.typography "=" "Elegant serif"}}font-alt{{/match}}">
     <div class="site">
         {{> header}}
 
@@ -40,21 +40,23 @@
         }
     </script>
 
-    <script>
-        var feed = document.querySelector('.post-feed');
-        if (feed && !feed.classList.contains('related-feed')) {
-            var wrapper = document.querySelector('.feed-layout');
-            var feedLayout = localStorage.getItem('edition_layout');
-            switch (feedLayout) {
-                case 'compact':
-                    wrapper.classList.remove('expanded');
-                    feed.classList.remove('expanded');
-                    break;
-                default:
-                    break;
+    {{#match @custom.post_feed_style "=" "Both"}}
+        <script>
+            var feed = document.querySelector('.post-feed');
+            if (feed && !feed.classList.contains('related-feed')) {
+                var wrapper = document.querySelector('.feed-layout');
+                var feedLayout = localStorage.getItem('edition_layout');
+                switch (feedLayout) {
+                    case 'compact':
+                        wrapper.classList.remove('expanded');
+                        feed.classList.remove('expanded');
+                        break;
+                    default:
+                        break;
+                }
             }
-        }
-    </script>
+        </script>
+    {{/match}}
 
     <script src="{{asset "built/main.min.js"}}"></script>
 
