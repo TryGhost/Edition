@@ -38,6 +38,28 @@
             "xxl": {
                 "width": 1920
             }
+        },
+        "custom": {
+            "typography": {
+                "type": "select",
+                "options": ["Modern sans-serif", "Elegant serif"],
+                "default": "Modern sans-serif"
+            },
+            "cover_style": {
+                "type": "select",
+                "options": ["Full cover image", "No cover image"],
+                "default": "Full cover image"
+            },
+            "show_featured_posts": {
+                "type": "select",
+                "options": ["Yes", "No"],
+                "default": "Yes"
+            },
+            "post_feed_style": {
+                "type": "select",
+                "options": ["Expanded", "Minimal", "Both"],
+                "default": "Both"
+            }
         }
     },
     "scripts": {
