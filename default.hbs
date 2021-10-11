@@ -20,7 +20,9 @@
             {{#unless @member}}
                 {{> cover}}
             {{/unless}}
-            {{> featured}}
+            {{#match @custom.show_featured_posts "=" "Yes"}}
+                {{> featured}}
+            {{/match}}
         {{/is}}
 
         <div class="site-content">
