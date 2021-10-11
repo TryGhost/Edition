@@ -1,7 +1,9 @@
 <div class="cover{{#if @site.cover_image}} image-loading{{/if}}">
-    {{#if @site.cover_image}}
-        <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
-    {{/if}}
+    {{#match @custom.cover_style "=" "Full cover image"}}
+        {{#if @site.cover_image}}
+            <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
+        {{/if}}
+    {{/match}}
 
     <div class="cover-content container">
         {{#if @site.description}}
