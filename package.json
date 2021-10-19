@@ -51,10 +51,9 @@
                 "default": "Full cover image",
                 "group": "homepage"
             },
-            "show_featured_posts": {
-                "type": "select",
-                "options": ["Yes", "No"],
-                "default": "Yes",
+            "featured_posts": {
+                "type": "boolean",
+                "default": true,
                 "group": "homepage"
             },
             "post_feed_style": {
