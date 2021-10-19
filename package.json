@@ -48,17 +48,20 @@
             "cover_style": {
                 "type": "select",
                 "options": ["Full cover image", "No cover image"],
-                "default": "Full cover image"
+                "default": "Full cover image",
+                "group": "homepage"
             },
             "show_featured_posts": {
                 "type": "select",
                 "options": ["Yes", "No"],
-                "default": "Yes"
+                "default": "Yes",
+                "group": "homepage"
             },
             "post_feed_style": {
                 "type": "select",
                 "options": ["Expanded", "Minimal", "Both"],
-                "default": "Both"
+                "default": "Both",
+                "group": "homepage"
             }
         }
     },
