@@ -17,9 +17,7 @@
         {{> header}}
 
         {{#is "home"}}
-            {{#unless @member}}
-                {{> cover}}
-            {{/unless}}
+            {{> cover}}
             {{#if @custom.featured_posts}}
                 {{> featured}}
             {{/if}}

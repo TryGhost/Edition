@@ -24,4 +24,20 @@
     </main>
 </div>
 
-{{#contentFor "body_class"}}{{#if next}} paged-next{{/if}}{{#match @custom.cover_style "!=" "No cover"}} with-full-cover{{else}} with-alt-header{{/match}}{{#if @member}} logged-in{{/if}}{{/contentFor}}
+{{#contentFor "body_class"}}
+    {{#if next}} paged-next{{/if}}
+    {{#match @custom.cover_style "!=" "No cover"}}
+        {{#match @custom.cover_style "No cover when logged in"}}
+            {{#if @member}}
+                with-alt-header
+            {{else}}
+                with-full-cover
+            {{/if}}
+        {{else}}
+            with-full-cover
+        {{/match}}
+    {{else}}
+        with-alt-header
+    {{/match}}
+    {{#if @member}} logged-in{{/if}}
+{{/contentFor}}
