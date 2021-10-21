@@ -99,6 +99,15 @@
     border-top: 0;
 }
 
+.post-feed.big-thumbnail .feed {
+    flex-direction: column;
+    padding: 3.5rem 0;
+}
+
+.post-feed.big-thumbnail .feed:first-child {
+    padding-top: 1.5rem;
+}
+
 .feed-group:first-child .feed-month + .feed {
     padding-top: 1.5rem;
 }
@@ -131,6 +140,12 @@
     display: none;
 }
 
+.post-feed.big-thumbnail .feed-image {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+
 .feed-wrapper {
     flex-grow: 1;
     display: flex;
@@ -159,6 +174,10 @@
     white-space: normal;
 }
 
+.post-feed.big-thumbnail .feed-title {
+    font-size: 2rem;
+}
+
 .font-alt .feed-title {
     font-family: var(--font-serif);
 }
@@ -170,6 +189,10 @@
 
 .post-feed:not(.expanded) .feed-excerpt {
     display: none;
+}
+
+.post-feed.big-thumbnail .feed-excerpt {
+    font-size: 1.6rem;
 }
 
 .feed-right {

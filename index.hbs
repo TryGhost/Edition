@@ -5,16 +5,10 @@
         <header class="feed-header container medium">
             <div class="feed-header-wrapper">
                 <h2 class="feed-header-title">Latest</h2>
-                {{#match @custom.post_feed_style "=" "Both"}}
-                    <div class="feed-layout expanded">
-                        <button class="button-icon feed-layout-headline">{{> icons/list-headline}}</button>
-                        <button class="button-icon feed-layout-expanded">{{> icons/list-bullet}}</button>
-                    </div>
-                {{/match}}
             </div>
         </header>
 
-        <div class="post-feed {{#match @custom.post_feed_style "!=" "Minimal"}}expanded{{/match}} container medium">
+        <div class="post-feed {{#match @custom.post_feed_style "!=" "Minimal"}}expanded{{/match}} {{#match @custom.post_feed_style "Big thumbnail"}}big-thumbnail{{/match}} container medium">
             {{^unless @member}}
                 {{#foreach posts}}
                     {{> "loop"}}

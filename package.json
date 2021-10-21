@@ -58,8 +58,8 @@
             },
             "post_feed_style": {
                 "type": "select",
-                "options": ["Expanded", "Minimal", "Both"],
-                "default": "Both",
+                "options": ["Expanded", "Minimal", "Big thumbnail"],
+                "default": "Expanded",
                 "group": "homepage"
             }
         }
