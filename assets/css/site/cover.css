@@ -10,6 +10,10 @@
     height: 100vh;
 }
 
+.with-full-cover .cover.half {
+    height: 60vh;
+}
+
 .with-full-cover .cover::before {
     content: "";
     position: absolute;
@@ -46,7 +50,7 @@
     text-align: center;
 }
 
-.with-full-cover .cover-content {
+.with-full-cover .cover:not(.half) .cover-content {
     transform: translateY(-6vmin);
 }
 
@@ -100,6 +104,10 @@
     margin-left: -20px;
     width: 40px;
     height: 40px;
+}
+
+.cover.half .cover-arrow {
+    display: none;
 }
 
 .cover-arrow .icon {

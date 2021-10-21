@@ -47,7 +47,7 @@
             },
             "cover_style": {
                 "type": "select",
-                "options": ["Full cover image", "No cover image"],
+                "options": ["Full cover image", "Half cover image", "No cover"],
                 "default": "Full cover image",
                 "group": "homepage"
             },
