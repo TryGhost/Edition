@@ -1,6 +1,6 @@
 {
-    "name": "edition",
-    "description": "A clean, minimal newsletter theme for the Ghost publishing platform",
+    "name": "edition-WDZ",
+    "description": "A clean, minimal newsletter theme for the Ghost publishing platform. Adaptated for Wedreadz",
     "version": "1.0.0",
     "engines": {
         "ghost": ">=4.0.0",
@@ -8,9 +8,9 @@
     },
     "license": "MIT",
     "author": {
-        "name": "Ghost Foundation",
-        "email": "hello@ghost.org",
-        "url": "https://ghost.org"
+        "name": "Clément Duveau",
+        "email": "clement@wedreadz.fr",
+        "url": "https://wedreadz.fr"
     },
     "keywords": [
         "ghost",

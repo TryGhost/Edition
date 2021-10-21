@@ -1,6 +1,13 @@
 {{#get "posts" filter="featured:true" limit="all" as |featured|}}
     {{#if featured}}
         <section class="featured-wrapper container">
+			{{#get "pages" filter="primary_tag:homepage" limit="1" as |seo|}}
+				{{#foreach seo}}
+					<div class="single-content kg-canvas u-text-format">
+						{{content}}
+					</div>
+				{{/foreach}}
+			{{/get}}
             <h2 class="featured-title">Featured articles</h2>
             <div class="featured-feed">
                 {{#foreach featured}}
