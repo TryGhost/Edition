@@ -9,15 +9,12 @@
         {{/if}}
 
         {{#unless @member}}
-            <form class="form-wrapper cover-form" data-members-form>
-                <input class="auth-email" type="email" data-members-email placeholder="{{t "Your email address"}}" required="true" autocomplete="false">
-
-                <button class="form-button" type="submit" aria-label="Submit">
-                    <span class="default">{{t "Subscribe"}}</span>
-                    <span class="loader">{{> icons/loader}}</span>
-                    <span class="success">{{t "Email sent"}}</span>
-                </button>
-            </form>
+			<a class="form-wrapper button cover-form" href="https://app.wedreadz.fr/booking" style="
+				background-color: var(--black-color);
+				color: var(--lighter-gray-color);
+				border-radius: 36px;
+				border-color: var(--link-color);
+			">Réserver maintenant</a>
         {{/unless}}
     </div>
 

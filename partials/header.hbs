@@ -30,7 +30,11 @@
                         {{> icons/facebook}}
                     </a>
                 {{/if}}
-
+                    <a class="social-item social-item-instagram"
+                        href="https://www.instagram.com/wedreadz.fr/" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">
+                        {{> icons/instagram}}
+                    </a>
                 {{#if @site.twitter}}
                     <a class="social-item social-item-twitter"
                         href="{{twitter_url @site.twitter}}" target="_blank"
@@ -40,11 +44,7 @@
                 {{/if}}
             </div>
 
-            {{#if @member}}
-                <button class="button-text menu-item members-account" data-portal="account">{{t "Account"}}</button>
-            {{else}}
-                <button class="button-text menu-item members-login" data-portal="signin">{{t "Login"}}</button>
-            {{/if}}
+            <a class="button-text menu-item members-login" href="https://app.wedreadz.fr">{{t "Login"}}</a>
         </div>
     </div>
 </header>
