@@ -67,6 +67,16 @@
                 "default": "Expanded",
                 "group": "homepage"
             },
+            "share_links": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
+            "author": {
+                "type": "boolean",
+                "default": true,
+                "group": "post"
+            },
             "related_posts": {
                 "type": "boolean",
                 "default": true,

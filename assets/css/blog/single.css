@@ -111,7 +111,7 @@
     font-size: 1.8rem;
 }
 
-.single-footer-bottom {
+.single-footer-top + .single-footer-bottom {
     margin-top: 2rem;
 }
 
