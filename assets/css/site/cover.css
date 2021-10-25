@@ -60,7 +60,7 @@
     font-weight: 700;
 }
 
-.font-alt .cover-description {
+.has-serif-title .cover-description {
     font-family: var(--font-serif);
 }
 

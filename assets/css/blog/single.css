@@ -24,7 +24,7 @@
     letter-spacing: -0.1rem;
 }
 
-.font-alt .single-title {
+.has-serif-title .single-title {
     font-family: var(--font-serif);
 }
 
@@ -34,6 +34,10 @@
     font-style: italic;
 }
 
+.has-serif-body .single-excerpt {
+    font-family: var(--font-serif);
+}
+
 .single-media {
     margin-top: 4.5rem;
     margin-bottom: 0;
@@ -41,6 +45,15 @@
 
 .single-media img {
     width: 100%;
+}
+
+.has-serif-body .single-content {
+    font-family: var(--font-serif);
+}
+
+.has-serif-title .single-content h2,
+.has-serif-title .single-content h3 {
+    font-family: var(--font-serif);
 }
 
 .single-cta {

@@ -168,13 +168,17 @@
     white-space: normal;
 }
 
-.font-alt .feed-title {
+.has-serif-title .feed-title {
     font-family: var(--font-serif);
 }
 
 .feed-excerpt {
     margin-top: 0.8rem;
     line-height: 1.4;
+}
+
+.has-serif-body .feed-excerpt {
+    font-family: var(--font-serif);
 }
 
 .post-feed:not(.expanded) .feed-excerpt {
