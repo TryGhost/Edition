@@ -45,10 +45,10 @@
                 "options": ["Modern sans-serif", "Elegant serif"],
                 "default": "Modern sans-serif"
             },
-            "cover_style": {
+            "cover_size": {
                 "type": "select",
-                "options": ["Full cover image", "Half cover image", "No cover", "No cover when logged in"],
-                "default": "Full cover image",
+                "options": ["Full", "Half"],
+                "default": "Full",
                 "group": "homepage"
             },
             "featured_posts": {
