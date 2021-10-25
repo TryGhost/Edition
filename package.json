@@ -56,9 +56,9 @@
                 "default": true,
                 "group": "homepage"
             },
-            "post_feed_style": {
+            "feed_layout": {
                 "type": "select",
-                "options": ["Expanded", "Minimal", "Big thumbnail"],
+                "options": ["Expanded", "Minimal", "Right thumbnail", "Text heavy"],
                 "default": "Expanded",
                 "group": "homepage"
             },
