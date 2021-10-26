@@ -52,8 +52,8 @@
             },
             "cover_size": {
                 "type": "select",
-                "options": ["Full", "Half"],
-                "default": "Full",
+                "options": ["Fullscreen", "Half screen"],
+                "default": "Fullscreen",
                 "group": "homepage"
             },
             "featured_posts": {
