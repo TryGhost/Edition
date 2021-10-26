@@ -3,9 +3,11 @@
 <div class="content-area">
     <main class="site-main">
         <header class="feed-header container medium">
-            <div class="feed-header-wrapper">
-                <h2 class="feed-header-title">Latest</h2>
-            </div>
+            {{#if @custom.feed_title}}
+                <div class="feed-header-wrapper">
+                    <h2 class="feed-header-title">{{@custom.feed_title}}</h2>
+                </div>
+            {{/if}}
         </header>
 
         <div class="post-feed{{#match @custom.feed_layout "!=" "Minimal"}} expanded{{/match}}{{#match @custom.feed_layout "Right thumbnail"}} right-thumbnail{{/match}} container medium">

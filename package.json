@@ -50,15 +50,29 @@
                 "options": ["Modern sans-serif", "Elegant serif"],
                 "default": "Modern sans-serif"
             },
+            "cta_text_override": {
+                "type": "text",
+                "group": "homepage"
+            },
             "cover_size": {
                 "type": "select",
                 "options": ["Fullscreen", "Half screen"],
                 "default": "Fullscreen",
                 "group": "homepage"
             },
+            "featured_title": {
+                "type": "text",
+                "default": "Featured articles",
+                "group": "homepage"
+            },
             "featured_posts": {
                 "type": "boolean",
                 "default": true,
+                "group": "homepage"
+            },
+            "feed_title": {
+                "type": "text",
+                "default": "Latest",
                 "group": "homepage"
             },
             "feed_layout": {
