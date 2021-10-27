@@ -51,9 +51,6 @@
                     <div class="navigation navigation-previous">
                         <a class="navigation-link" href="{{url}}" aria-label="Previous post">
                             <span class="navigation-icon">{{> icons/arrow-left}}</span>
-                            {{#unless @custom.show_share_links}}{{#unless @custom.show_author}}
-                                <span class="navigation-label">Previous</span>
-                            {{/unless}}{{/unless}}
                         </a>
                     </div>
                 {{/prev_post}}
@@ -99,9 +96,6 @@
                 {{#next_post}}
                     <div class="navigation navigation-next">
                         <a class="navigation-link" href="{{url}}" aria-label="Next post">
-                            {{#unless @custom.show_share_links}}{{#unless @custom.show_author}}
-                                <span class="navigation-label">Next</span>
-                            {{/unless}}{{/unless}}
                             <span class="navigation-icon">{{> icons/arrow-right}}</span>
                         </a>
                     </div>

@@ -15,7 +15,7 @@
     justify-content: flex-end;
 }
 
-.navigation-label {
-    font-size: 1.8rem;
-    font-weight: 700;
+.navigation-icon .icon {
+    width: 30px;
+    height: 30px;
 }

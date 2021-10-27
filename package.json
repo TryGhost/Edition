@@ -65,7 +65,7 @@
                 "default": "Featured articles",
                 "group": "homepage"
             },
-            "featured_posts": {
+            "show_featured_posts": {
                 "type": "boolean",
                 "default": true,
                 "group": "homepage"
@@ -77,7 +77,7 @@
             },
             "feed_layout": {
                 "type": "select",
-                "options": ["Expanded", "Minimal", "Right thumbnail", "Text-only"],
+                "options": ["Expanded", "Right thumbnail", "Text-only", "Minimal"],
                 "default": "Expanded",
                 "group": "homepage"
             },
