@@ -50,7 +50,7 @@
                 "options": ["Modern sans-serif", "Elegant serif"],
                 "default": "Modern sans-serif"
             },
-            "cta_text_override": {
+            "cta_text": {
                 "type": "text",
                 "group": "homepage"
             },
@@ -77,7 +77,7 @@
             },
             "feed_layout": {
                 "type": "select",
-                "options": ["Expanded", "Minimal", "Right thumbnail", "Text heavy"],
+                "options": ["Expanded", "Minimal", "Right thumbnail", "Text-only"],
                 "default": "Expanded",
                 "group": "homepage"
             },
