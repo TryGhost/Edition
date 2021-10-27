@@ -6,7 +6,7 @@
             {{> content width="wide"}}
         {{/post}}
         {{#is "post"}}
-            {{#if @custom.related_posts}}
+            {{#if @custom.show_related_posts}}
                 {{> related}}
             {{/if}}
             {{> comment}}

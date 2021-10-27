@@ -81,17 +81,17 @@
                 "default": "Expanded",
                 "group": "homepage"
             },
-            "share_links": {
+            "show_share_links": {
                 "type": "boolean",
                 "default": true,
                 "group": "post"
             },
-            "author": {
+            "show_author": {
                 "type": "boolean",
                 "default": true,
                 "group": "post"
             },
-            "related_posts": {
+            "show_related_posts": {
                 "type": "boolean",
                 "default": true,
                 "group": "post"
