@@ -1,4 +1,4 @@
-<div class="cover{{#if @site.cover_image}} image-loading{{/if}}{{#match @custom.cover_size "Half screen"}} half{{/match}}">
+<div class="cover{{#if @site.cover_image}} image-loading{{/if}}{{#match @custom.publication_cover_style "Half screen"}} half{{/match}}">
     {{#if @site.cover_image}}
         <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
     {{/if}}
@@ -6,8 +6,8 @@
     <div class="cover-content container">
         {{#if @site.description}}
             <div class="cover-description">
-                {{#if @custom.cta_text}}
-                    {{@custom.cta_text}}
+                {{#if @custom.email_signup_text}}
+                    {{@custom.email_signup_text}}
                 {{else}}
                     {{@site.description}}
                 {{/if}}
