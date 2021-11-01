@@ -10,7 +10,7 @@
             {{/if}}
         </header>
 
-        <div class="post-feed{{#match @custom.feed_layout "!=" "Minimal"}} expanded{{/match}}{{#match @custom.feed_layout "Right thumbnail"}} right-thumbnail{{/match}} container medium">
+        <div class="post-feed{{#match @custom.feed_layout "!=" "Minimal"}} expanded{{/match}}{{#match @custom.feed_layout "Right thumbnail"}} right-thumbnail{{/match}}{{#match @custom.feed_layout "Text-only"}} text-only{{/match}} container medium">
             {{^unless @member}}
                 {{#foreach posts}}
                     {{> "loop"}}

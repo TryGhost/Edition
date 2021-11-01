@@ -10,7 +10,7 @@ subMenu();
 featured();
 feedLayout();
 pagination();
-archive();
+// archive();
 video();
 gallery();
 table();
