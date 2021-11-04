@@ -8,18 +8,16 @@
             <div class="cover-description">{{@site.description}}</div>
         {{/if}}
 
-        {{#unless @member}}
-			<a class="form-wrapper button cover-form" href="https://app.wedreadz.fr/booking" style="
-				background-color: var(--black-color);
-				color: var(--lighter-gray-color);
-				border-radius: 36px;
-				border-color: var(--link-color);
-			">Réserver maintenant
-				<span style="position: absolute; right: 2rem; color: var(--link-color);">
-					{{> icons/telegram}}
-				</span>
-			</a>
-        {{/unless}}
+		<a class="form-wrapper button cover-form" href="https://app.wedreadz.fr/booking" style="
+			background-color: var(--black-color);
+			color: var(--lighter-gray-color);
+			border-radius: 36px;
+			border-color: var(--link-color);
+		">Réserver maintenant
+			<span style="position: absolute; right: 2rem; color: var(--link-color);">
+				{{> icons/telegram}}
+			</span>
+		</a>
     </div>
 
     <button aria-hidden="true" class="button-icon cover-arrow">

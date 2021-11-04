@@ -1,0 +1,13 @@
+.suscribe-form {
+	align-items: center;
+    display: flex;
+}
+
+.suscribe-wrapper {
+    padding: 4.5rem 0 3rem;
+    background-color: var(--lighter-gray-color);
+}
+
+.suscribe-title {
+    font-size: 1.9rem;
+}
