@@ -4,6 +4,7 @@
     border: 1px solid var(--light-gray-color);
     border-radius: 3px;
 	height: 100%;
+	position: relative;
 }
 
 .notation > .icon {
@@ -12,9 +13,11 @@
 
 .notation-context {
 	text-transform: uppercase;
-	margin-left: 1rem !important;
 	font-weight: bold;
 	font-size: 1.2rem;
+	position: absolute;
+	right: 1rem;
+	top: 1.2rem;
 }
 
 .notation > p {
