@@ -1,6 +1,13 @@
 .suscribe-form {
-	align-items: center;
     display: flex;
+}
+
+.suscribe-form input{
+    height: 50px;
+}
+
+.suscribe-form .form-button{
+    min-width: 110px;
 }
 
 .suscribe-wrapper {
@@ -10,4 +17,8 @@
 
 .suscribe-title {
     font-size: 1.9rem;
+}
+
+.post-form {
+	width: 100%;
 }

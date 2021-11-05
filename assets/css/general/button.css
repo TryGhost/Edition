@@ -18,7 +18,7 @@
 
 .button:hover {
     border-color: var(--mid-gray-color);
-    opacity: 1;
+    opacity: 100%;
 }
 
 .button-secondary {
@@ -40,7 +40,7 @@
 }
 
 .button-icon:hover .icon {
-    opacity: 0.8;
+    opacity: 80%;
 }
 
 .button-text {

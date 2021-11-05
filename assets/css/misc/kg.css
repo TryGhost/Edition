@@ -19,7 +19,7 @@
 }
 
 .kg-gallery-row:not(:first-of-type) {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0;
 }
 
 .kg-gallery-image:not(:first-of-type) {
@@ -43,7 +43,7 @@
 }
 
 .kg-bookmark-container:hover {
-    opacity: 1;
+    opacity: 100%;
 }
 
 .kg-bookmark-content {

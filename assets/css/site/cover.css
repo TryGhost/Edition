@@ -19,12 +19,12 @@
     left: 0;
     z-index: 10;
     background-color: #000;
-    opacity: 0.3;
+    opacity: 30%;
     transition: opacity 1.5s ease;
 }
 
 .cover.image-loading::before {
-    opacity: 1;
+    opacity: 100%;
 }
 
 .cover-image {

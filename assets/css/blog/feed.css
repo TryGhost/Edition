@@ -35,7 +35,7 @@
     height: 30px;
     background-color: var(--white-color);
     border-radius: 3px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 10%);
     transition: transform 0.2s cubic-bezier(0.25, 0.75, 0.5, 1.25);
 }
 
@@ -44,7 +44,7 @@
 }
 
 .feed-layout .button-icon:hover .icon {
-    opacity: 1;
+    opacity: 100%;
 }
 
 .feed-layout .icon {
@@ -65,7 +65,7 @@
 }
 
 .feed:hover .feed-title {
-    opacity: 0.8;
+    opacity: 80%;
 }
 
 .feed:hover .feed-right {
@@ -254,7 +254,7 @@
     color: var(--darker-gray-color);
     font-size: 1.7rem;
     font-weight: 700;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255 255 255 / 80%);
     backdrop-filter: blur(3px);
 }
 

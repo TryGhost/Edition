@@ -26,9 +26,9 @@
 }
 
 .featured-feed {
-    opacity: 0;
+    opacity: 0%;
 }
 
 .featured-feed.tns-slider {
-    opacity: 1;
+    opacity: 100%;
 }
