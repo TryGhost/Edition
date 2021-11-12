@@ -3,8 +3,7 @@
     padding: 10px 0 0 10px;
     border: 1px solid var(--light-gray-color);
     border-radius: 3px;
-	height: 100%;
-	position: relative;
+    position: relative;
 }
 
 .notation > .icon {
