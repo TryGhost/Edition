@@ -8,7 +8,9 @@
 					</div>
 				{{/foreach}}
 			{{/get}}
-            <h2 class="featured-title">{{t "Featured articles"}}</h2>
+            {{#if @custom.featured_title}}
+                <h2 class="featured-title">{{@custom.featured_title}}</h2>
+            {{/if}}
             <div class="featured-feed">
                 {{#foreach featured}}
                     <article class="{{post_class}}">
@@ -22,8 +24,7 @@
                             </div>
                         {{/if}}
                         <h3 class="post-title">{{title}}</h3>
-                        <a class="u-permalink" href={{url}}
-                            aria-label="{{title}}"></a>
+                        <a class="u-permalink" href={{url}} aria-label="{{title}}"></a>
                     </article>
                 {{/foreach}}
             </div>
