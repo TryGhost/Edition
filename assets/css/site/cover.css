@@ -124,3 +124,11 @@
         margin-top: 0;
     }
 }
+
+.cover-credit {
+	position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--button-shadow-color-normal);
+	margin: 0;
+}

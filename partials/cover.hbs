@@ -1,6 +1,9 @@
 <div class="cover{{#if @site.cover_image}} image-loading{{/if}}{{#match @custom.publication_cover_style "Half screen"}} half{{/match}}">
     {{#if @site.cover_image}}
         <img class="cover-image u-object-fit" src="{{@site.cover_image}}" alt="{{@site.title}}">
+		<figcaption class="cover-credit">
+			Photo by <a href="https://www.instagram.com/wdldesign/" target="_blank"  rel="noopener">wdldesign</a>
+		</figcaption>
     {{/if}}
 
     <div class="cover-content container">
