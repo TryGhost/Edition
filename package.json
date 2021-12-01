@@ -110,6 +110,9 @@
                 "type": "boolean",
                 "default": true,
                 "group": "post"
+            },
+            "instagram_url": {
+                "type": "text"
             }
         }
     },

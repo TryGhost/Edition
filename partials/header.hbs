@@ -38,6 +38,14 @@
                         {{> icons/twitter}}
                     </a>
                 {{/if}}
+
+                {{#if @custom.instagram_url}}
+                    <a class="social-item social-item-instagram"
+                        href="{{@custom.instagram_url}}" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">
+                        {{> icons/instagram}}
+                    </a>
+                {{/if}}
             </div>
 
             {{#if @member}}
