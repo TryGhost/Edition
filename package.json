@@ -39,6 +39,7 @@
                 "width": 1920
             }
         },
+        "card_assets": true,
         "custom": {
             "title_font": {
                 "type": "select",
@@ -119,18 +120,18 @@
         "zip": "gulp zip"
     },
     "devDependencies": {
-        "autoprefixer": "10.4.0",
+        "autoprefixer": "10.4.2",
         "beeper": "2.1.0",
-        "cssnano": "5.0.11",
-        "gscan": "4.10.2",
+        "cssnano": "5.1.1",
+        "gscan": "4.22.0",
         "gulp": "4.0.2",
         "gulp-concat": "2.6.1",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "9.0.1",
         "gulp-uglify": "3.0.2",
         "gulp-zip": "5.1.0",
-        "postcss": "8.3.11",
-        "postcss-easy-import": "3.0.0",
+        "postcss": "8.4.8",
+        "postcss-easy-import": "4.0.0",
         "pump": "3.0.0"
     },
     "browserslist": [
