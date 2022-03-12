@@ -1,0 +1,27 @@
+.guarantees-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.guarantee {
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.guarantees-icon {
+    display: block;
+    margin: auto;
+    height: 60px;
+}
+
+@media (min-width: 767px) {
+    .guarantees {
+        display: flex;
+    }
+    .guarantee {
+        margin: 3rem 1rem 0;
+        width: 33.33%;
+        width: calc(100% / 3);
+    }
+}
