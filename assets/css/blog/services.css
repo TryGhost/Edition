@@ -1,0 +1,67 @@
+.services {
+    margin-bottom: 3rem;
+}
+
+.service {
+    border: 1px solid var(--light-gray-color);
+    border-radius: 3px;
+    height: 180px;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    background-position: center;
+}
+
+.service-title {
+    background: var(--button-shadow-color-normal);
+    background: radial-gradient(circle, var(--button-shadow-color-normal) 0%, var(--background-color) 50%, var(--button-shadow-color-normal) 100%);
+    border-radius: 50px;
+    padding: 0 1rem;
+    line-height: 180px;
+    font-weight: 900;
+    color: var(--primary-subtle-color);
+    font-size: x-large;
+}
+
+.service-price {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    color: var(--secondary-subtle-color);
+    background-color: var(--primary-foreground-color);
+}
+
+@media (min-width: 767px) {
+    .notation {
+        margin: 1.5rem 1rem 0;
+    }
+}
+
+@media (min-width: 991px) {
+    .services {
+        display: inline-flex;
+    }
+
+    .service {
+        margin: 3rem 1rem 0;
+        width: 33.33%;
+        width: calc(100% / 3);
+        height: 240px;
+    }
+
+    .service-title {
+        line-height: 280px;
+    }
+}
+
+.service-creation {
+    background-image: url("https://staging.wedreadz.fr/content/images/size/w400/2021/10/V2_WDZ-1.jpg");
+}
+.service-entretien {
+    background-image: url("https://staging.wedreadz.fr/content/images/size/w400/2021/10/V2_WDZ-1.jpg");
+}
+.service-soin {
+    background-image: url("https://staging.wedreadz.fr/content/images/size/w400/2021/10/V2_WDZ-1.jpg");
+}
