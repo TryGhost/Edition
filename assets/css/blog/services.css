@@ -5,23 +5,30 @@
 .service {
     border: 1px solid var(--light-gray-color);
     border-radius: 3px;
-    height: 180px;
+    height: 240px;
     display: block;
     text-align: center;
     position: relative;
     margin-top: 2rem;
     background-position: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service img {
+    object-fit: cover;
 }
 
 .service-title {
     background: var(--button-shadow-color-normal);
-    background: radial-gradient(circle, var(--button-shadow-color-normal) 0%, var(--background-color) 50%, var(--button-shadow-color-normal) 100%);
+    background: radial-gradient(circle, var(--background-color) 0%, var(--button-shadow-color-normal) 100%);
     border-radius: 50px;
     padding: 0 1rem;
-    line-height: 180px;
+    line-height: 240px;
     font-weight: 900;
     color: var(--primary-subtle-color);
-    font-size: x-large;
+    font-size: large;
 }
 
 .service-price {
@@ -34,12 +41,6 @@
 }
 
 @media (min-width: 767px) {
-    .notation {
-        margin: 1.5rem 1rem 0;
-    }
-}
-
-@media (min-width: 991px) {
     .services {
         display: inline-flex;
     }
@@ -48,20 +49,23 @@
         margin: 3rem 1rem 0;
         width: 33.33%;
         width: calc(100% / 3);
-        height: 240px;
     }
+}
 
+@media (min-width: 991px) {
     .service-title {
-        line-height: 280px;
+        font-size: x-large;
     }
 }
 
 .service-creation {
-    background-image: url("https://staging.wedreadz.fr/content/images/size/w400/2021/10/V2_WDZ-1.jpg");
+    background-image: url(https://media-ghost.s3.fr-par.scw.cloud/static/homepage-section-services/creation.webp);
 }
+
 .service-entretien {
-    background-image: url("https://staging.wedreadz.fr/content/images/size/w400/2021/10/V2_WDZ-1.jpg");
+    background-image: url(https://media-ghost.s3.fr-par.scw.cloud/static/homepage-section-services/entretien.webp);
 }
+
 .service-soin {
-    background-image: url("https://staging.wedreadz.fr/content/images/size/w400/2021/10/V2_WDZ-1.jpg");
+    background-image: url(https://media-ghost.s3.fr-par.scw.cloud/static/homepage-section-services/soin.webp);
 }
