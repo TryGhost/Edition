@@ -1,33 +1,36 @@
 {{!< default}}
 
 <div class="content-area">
-    <main class="site-main">
-        {{#tag}}
-            <section class="taxonomy">
-                {{#if feature_image}}
-                    <div class="taxonomy-media u-placeholder square">
-                        <img class="u-object-fit" src="{{img_url feature_image size="s"}}" alt="{{name}}">
-                    </div>
-                {{/if}}
+<main class="site-main">
 
-                <header class="single-header kg-canvas">
-                    <h1 class="single-title">{{name}}</h1>
+    {{#tag}}
+    <section class="taxonomy">
 
-                    {{#if description}}
-                        <div class="single-excerpt">{{description}}</div>
-                    {{/if}}
-                </header>
-            </section>
-        {{/tag}}
+        {{#if feature_image}}
+            <div class="taxonomy-media u-placeholder square">
+                <img class="u-object-fit" src="{{img_url feature_image size="s"}}" alt="{{name}}">
+            </div>
+        {{/if}}
 
-        <div class="post-feed container medium">
-            {{#foreach posts}}
-                {{> "loop"}}
-            {{/foreach}}
-        </div>
+        <header class="single-header kg-canvas">
+            <h1 class="single-title">{{name}}</h1>
+            {{#if description}}
+                <div class="single-excerpt">{{description}}</div>
+            {{/if}}
+        </header>
 
-        {{pagination}}
-    </main>
+    </section>
+    {{/tag}}
+
+    <div class="post-feed container medium">
+        {{#foreach posts}}
+            {{> "loop"}}
+        {{/foreach}}
+    </div>
+
+    {{pagination}}
+
+</main>
 </div>
 
 {{#contentFor "body_class"}}{{#if next}} paged-next{{/if}}{{#if @site.logo}}{{#if @site.cover_image}} with-alt-header{{/if}}{{/if}}{{/contentFor}}

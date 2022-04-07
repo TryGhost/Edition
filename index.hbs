@@ -1,29 +1,31 @@
 {{!< default}}
 
 <div class="content-area">
-    <main class="site-main">
-        <header class="feed-header container medium">
-            {{#if @custom.feed_title}}
-                <div class="feed-header-wrapper">
-                    <h2 class="feed-header-title">{{@custom.feed_title}}</h2>
-                </div>
-            {{/if}}
-        </header>
+<main class="site-main">
 
-        <div class="post-feed{{#match @custom.feed_layout "!=" "Minimal"}} expanded{{/match}}{{#match @custom.feed_layout "Right thumbnail"}} right-thumbnail{{/match}}{{#match @custom.feed_layout "Text-only"}} text-only{{/match}} container medium">
-            {{^unless @member}}
-                {{#foreach posts}}
-                    {{> "loop"}}
-                {{/foreach}}
-            {{else}}
-                {{#foreach posts}}
-                    {{> "loop"}}
-                {{/foreach}}
-            {{/unless}}
-        </div>
+    <header class="feed-header container medium">
+        {{#if @custom.feed_title}}
+            <div class="feed-header-wrapper">
+                <h2 class="feed-header-title">{{@custom.feed_title}}</h2>
+            </div>
+        {{/if}}
+    </header>
 
-        {{pagination}}
-    </main>
+    <div class="post-feed{{#match @custom.feed_layout "!=" "Minimal"}} expanded{{/match}}{{#match @custom.feed_layout "Right thumbnail"}} right-thumbnail{{/match}}{{#match @custom.feed_layout "Text-only"}} text-only{{/match}} container medium">
+        {{^unless @member}}
+            {{#foreach posts}}
+                {{> "loop"}}
+            {{/foreach}}
+        {{else}}
+            {{#foreach posts}}
+                {{> "loop"}}
+            {{/foreach}}
+        {{/unless}}
+    </div>
+
+    {{pagination}}
+
+</main>
 </div>
 
 {{#contentFor "body_class"}}{{#if next}} paged-next{{/if}}{{#if @site.cover_image}} with-full-cover{{/if}}{{#if @member}} logged-in{{/if}}{{/contentFor}}

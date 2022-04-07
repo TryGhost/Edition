@@ -15,34 +15,111 @@
 </head>
 
 <body class="{{body_class}}{{{block "body_class"}}}{{#match @custom.title_font "=" "Elegant serif"}} has-serif-title{{/match}}{{#match @custom.body_font "=" "Elegant serif"}} has-serif-body{{/match}}">
-    <div class="site">
-        {{> header}}
+<div class="site">
 
-        {{#is "home"}}
-            {{> cover}}
-            {{#if @custom.show_featured_posts}}
-                {{> featured}}
-            {{/if}}
-        {{/is}}
+    <header id="site-header" class="site-header">
+        <div class="header-inner">
+            <div class="header-brand">
+                <a class="logo" href="{{@site.url}}">
+                    {{#if @site.logo}}
+                        <img class="logo-image" src="{{@site.logo}}" alt="{{@site.title}}">
+                    {{else}}
+                        <span class="logo-text">{{@site.title}}</span>
+                    {{/if}}
+                </a>
 
-        <div class="site-content">
-            {{{body}}}
+                <div class="burger">
+                    <div class="burger-bar"></div>
+                    <div class="burger-bar"></div>
+                </div>
+            </div>
+
+            <nav class="header-nav">
+                {{#if @site.navigation}}
+                    {{navigation}}
+                {{/if}}
+            </nav>
+
+            <div class="header-actions">
+                <div class="social">
+                    {{#if @site.facebook}}
+                        <a class="social-item social-item-facebook" href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            {{> "icons/facebook"}}
+                        </a>
+                    {{/if}}
+
+                    {{#if @site.twitter}}
+                        <a class="social-item social-item-twitter" href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            {{> "icons/twitter"}}
+                        </a>
+                    {{/if}}
+                </div>
+
+                {{#if @member}}
+                    <button class="button-text menu-item members-account" data-portal="account">Account</button>
+                {{else}}
+                    <button class="button-text menu-item members-login" data-portal="signin">Login</button>
+                {{/if}}
+            </div>
         </div>
+    </header>
 
-        {{> footer}}
-        {{> pswp}}
+    {{#is "home"}}
+        {{> "cover"}}
+        {{#if @custom.show_featured_posts}}
+            {{> "featured"}}
+        {{/if}}
+    {{/is}}
+
+    <div class="site-content">
+        {{{body}}}
     </div>
 
-    {{!-- Fixes 100vh issue on mobile browsers with toolbar on the bottom --}}
-    <script>
-        if (document.body.classList.contains('with-full-cover') && (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
-            document.getElementsByClassName('cover')[0].style.height = window.innerHeight + 'px';
-        }
-    </script>
+    <footer class="site-footer container">
+    <div class="footer-inner">
 
-    <script src="{{asset "built/main.min.js"}}"></script>
+        <div class="footer-left">
+            <div class="copyright">
+                {{@site.title}} © {{date format="YYYY"}}
+            </div>
+        </div>
 
-    {{ghost_foot}}
+        <nav class="footer-nav">
+            {{navigation type="secondary"}}
+            <a class="menu-item badge" href="https://ghost.org/" target="_blank" rel="noopener noreferrer">Published with Ghost</a>
+        </nav>
+
+        <div class="footer-right">
+            <div class="social">
+                {{#if @site.facebook}}
+                    <a class="social-item social-item-facebook" href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        {{> "icons/facebook"}}
+                    </a>
+                {{/if}}
+                {{#if @site.twitter}}
+                    <a class="social-item social-item-twitter" href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        {{> "icons/twitter"}}
+                    </a>
+                {{/if}}
+            </div>
+        </div>
+
+    </div>
+    </footer>
+
+    {{> "pswp"}}
+</div>
+
+{{!-- Fixes 100vh issue on mobile browsers with toolbar on the bottom --}}
+<script>
+    if (document.body.classList.contains('with-full-cover') && (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform))) {
+        document.getElementsByClassName('cover')[0].style.height = window.innerHeight + 'px';
+    }
+</script>
+
+<script src="{{asset "built/main.min.js"}}"></script>
+
+{{ghost_foot}}
+
 </body>
-
 </html>

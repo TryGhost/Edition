@@ -95,11 +95,6 @@
                 "default": "Expanded",
                 "group": "homepage"
             },
-            "show_share_links": {
-                "type": "boolean",
-                "default": true,
-                "group": "post"
-            },
             "show_author": {
                 "type": "boolean",
                 "default": true,
