@@ -1,0 +1,4 @@
+
+node_modules/*
+dist/edition.zip
+.DS_Store

@@ -1,0 +1,32 @@
+body {
+    background-color: var(--darker-gray-color);
+    color: var(--color-white);
+  }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+      color: var(--color-lighter-gray);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+  }
+
+a {
+  color: var(--color-lighter-gray);
+}
+
+.gh-content figcaption a {
+ color: var(--color-lighter-gray);
+}
+
+section.related-wrapper.gh-canvas {
+  background-color: var(--color-dark-gray);
+  color: var(--color-lighter-gray)
+}
+
+div.feed-calendar {
+  color: var(--color-light-gray);
+}
