@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;0,800;1,400;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+
     <link rel="stylesheet" href="{{asset "built/screen.css"}}">
 
     {{ghost_head}}
@@ -62,9 +65,14 @@
     </header>
 
     {{#is "home"}}
-        {{> "cover"}}
+        {{> cover}}
+        {{> guarantees}}
+        <hr>
+        {{> services}}
+        <hr>
+        {{> notations}}
         {{#if @custom.show_featured_posts}}
-            {{> "featured-posts"}}
+            {{> featured}}
         {{/if}}
     {{/is}}
 
@@ -104,4 +112,5 @@
 {{ghost_foot}}
 
 </body>
+
 </html>

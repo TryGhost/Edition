@@ -1,0 +1,24 @@
+.suscribe-form {
+    display: flex;
+}
+
+.suscribe-form input{
+    height: 50px;
+}
+
+.suscribe-form .form-button{
+    min-width: 110px;
+}
+
+.suscribe-wrapper {
+    padding: 4.5rem 0 3rem;
+    background-color: var(--lighter-gray-color);
+}
+
+.suscribe-title {
+    font-size: 1.9rem;
+}
+
+.post-form {
+	width: 100%;
+}

@@ -1,0 +1,71 @@
+.services {
+    margin-bottom: 3rem;
+}
+
+.service {
+    border: 1px solid var(--light-gray-color);
+    border-radius: 3px;
+    height: 240px;
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-top: 2rem;
+    background-position: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service img {
+    object-fit: cover;
+}
+
+.service-title {
+    background: var(--button-shadow-color-normal);
+    background: radial-gradient(circle, var(--background-color) 0%, var(--button-shadow-color-normal) 100%);
+    border-radius: 50px;
+    padding: 0 1rem;
+    line-height: 240px;
+    font-weight: 900;
+    color: var(--primary-subtle-color);
+    font-size: large;
+}
+
+.service-price {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    width: 100%;
+    color: var(--secondary-subtle-color);
+    background-color: var(--primary-foreground-color);
+}
+
+@media (min-width: 767px) {
+    .services {
+        display: inline-flex;
+    }
+
+    .service {
+        margin: 3rem 1rem 0;
+        width: 33.33%;
+        width: calc(100% / 3);
+    }
+}
+
+@media (min-width: 991px) {
+    .service-title {
+        font-size: x-large;
+    }
+}
+
+.service-creation {
+    background-image: url(https://media-ghost.s3.fr-par.scw.cloud/static/homepage-section-services/creation.webp);
+}
+
+.service-entretien {
+    background-image: url(https://media-ghost.s3.fr-par.scw.cloud/static/homepage-section-services/entretien.webp);
+}
+
+.service-soin {
+    background-image: url(https://media-ghost.s3.fr-par.scw.cloud/static/homepage-section-services/soin.webp);
+}

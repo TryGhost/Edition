@@ -1,0 +1,7 @@
+div#disqus_thread {
+    max-width: calc(720px + 10vw);
+    margin: auto;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 1rem;
+}

@@ -1,0 +1,41 @@
+.notation {
+    margin: 1rem 0 0;
+    padding: 10px 0 0 10px;
+    border: 1px solid var(--light-gray-color);
+    border-radius: 3px;
+    position: relative;
+}
+
+.notation > .icon {
+    fill: var(--link-color);
+}
+
+.notation-context {
+	font-weight: bold;
+	font-size: 1.2rem;
+	position: absolute;
+	right: 1rem;
+	top: 1.2rem;
+}
+
+.notation > p {
+    margin: 0 0 1rem;
+}
+
+@media (min-width: 767px) {
+    .notation {
+        margin: 1.5rem 1rem 0;
+    }
+}
+
+@media (min-width: 991px) {
+    .notations {
+        display: inline-flex;
+    }
+
+    .notation {
+        margin: 3rem 1rem 0;
+		width: 33.33%;
+		width: calc(100%/3);
+    }
+}
