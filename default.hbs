@@ -47,10 +47,34 @@
                 {{else}}
                     <button class="gh-search gh-icon-btn" data-ghost-search>{{> "icons/search"}}</button>
                     <div class="gh-head-members">
+                        <div class="social">
+                            {{#if @site.facebook}}
+                                <a class="social-item social-item-facebook"
+                                    href="{{facebook_url @site.facebook}}" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Facebook">
+                                    {{> icons/facebook}}
+                                </a>
+                            {{/if}}
+
+                            {{#if @site.twitter}}
+                                <a class="social-item social-item-twitter"
+                                    href="{{twitter_url @site.twitter}}" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Twitter">
+                                    {{> icons/twitter}}
+                                </a>
+                            {{/if}}
+
+                            {{#if @custom.instagram_url}}
+                                <a class="social-item social-item-instagram"
+                                    href="{{@custom.instagram_url}}" target="_blank"
+                                    rel="noopener noreferrer" aria-label="Instagram">
+                                    {{> icons/instagram}}
+                                </a>
+                            {{/if}}
+                        </div>
                         {{#unless @member}}
                             {{#unless @site.members_invite_only}}
                                 <a class="gh-head-link" href="#/portal/signin" data-portal="signin">Sign in</a>
-                                <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signup" data-portal="signup">Subscribe</a>
                             {{else}}
                                 <a class="gh-head-btn gh-btn gh-primary-btn" href="#/portal/signin" data-portal="signin">Sign in</a>
                             {{/unless}}
@@ -82,9 +106,33 @@
             <nav class="gh-foot-menu">
                 {{navigation type="secondary"}}
             </nav>
-            <div class="gh-powered-by">
-                <a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a>
+            {{#if @custom.show_share_links}}
+            <div class="social">
+                {{#if @site.facebook}}
+                    <a class="social-item social-item-facebook"
+                        href="{{facebook_url @site.facebook}}" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook">
+                        {{> icons/facebook}}
+                    </a>
+                {{/if}}
+
+                {{#if @site.twitter}}
+                    <a class="social-item social-item-twitter"
+                        href="{{twitter_url @site.twitter}}" target="_blank"
+                        rel="noopener noreferrer" aria-label="Twitter">
+                        {{> icons/twitter}}
+                    </a>
+                {{/if}}
+
+                {{#if @custom.instagram_url}}
+                    <a class="social-item social-item-instagram"
+                        href="{{@custom.instagram_url}}" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">
+                        {{> icons/instagram}}
+                    </a>
+                {{/if}}
             </div>
+        {{/if}}
         </div>
     </footer>
 

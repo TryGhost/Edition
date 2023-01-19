@@ -2,6 +2,16 @@
 
 <main class="site-main">
 
+    {{#if @custom.google_calendar_url}}
+    <header class="feed-header gh-canvas">
+        <div class="feed-header-wrapper">
+            <h2 class="feed-header-title">Upcoming Events</h2>
+        </div>
+    </header>
+    <div class="gh-canvas">
+        <iframe src="{{@custom.google_calendar_url}}" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+    {{/if}}
     <header class="feed-header gh-canvas">
         {{#if @custom.feed_title}}
             <div class="feed-header-wrapper">

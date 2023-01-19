@@ -1,0 +1,18 @@
+{{!< default}}
+
+<div class="content-area">
+    <main class="site-main gh-canvas">
+        {{#post}}
+        {{> content width="wide"}}
+        {{/post}}
+
+        <div class="post-feed text-only container medium">
+            {{#get "posts" limit="all" filter="tags:article"}}
+            {{#foreach posts}}
+            {{> "loop"}}
+            {{/foreach}}
+            {{/get}}
+        </div>
+
+    </main>
+</div>

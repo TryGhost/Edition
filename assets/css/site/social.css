@@ -1,0 +1,29 @@
+.social {
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
+
+.social-item {
+    color: var(--white-color);
+    line-height: 0;
+}
+
+.social-item + .social-item {
+    margin-left: 15px;
+}
+
+.social-item + .social-item-rss {
+    margin-left: 10px;
+}
+
+.social-item .icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
+
+.social-item-rss .icon {
+    width: 15px;
+    height: 15px;
+}

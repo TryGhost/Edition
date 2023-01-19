@@ -1,0 +1,23 @@
+{{!< default}}
+
+<div class="content-area">
+    <main class="site-main gh-canvas">
+        <header class="single-header kg-canvas">
+          <h1 class="single-title">
+            Archive
+          </h1>
+          <span class="author-meta">
+            {{#get "posts"}}
+              {{t "Browse the archive of {total} posts." total=pagination.total}}
+            {{/get}}
+          </span>
+        </header>
+        <div class="post-feed text-only container medium">
+          {{#get "posts" limit="all" order="published_at desc"}}
+            {{#foreach posts}}
+              {{> "loop"}}
+            {{/foreach}}
+          {{/get}}
+        </div>
+    </main>
+</div>

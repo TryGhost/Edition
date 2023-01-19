@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  ghost-theme-docker:
+    image: ghost-theme-docker
+    container_name: ghost-theme-docker
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - './.tmp/data:/var/lib/ghost/content/data'
+      - './.tmp/images:/var/lib/ghost/content/images'
+      - './.tmp/settings:/var/lib/ghost/content/settings'
+      - './:/var/lib/ghost/content/themes/edition'
+      - node_modules:/var/lib/ghost/content/themes/edition/node_modules
+    ports:
+      - "3102:2368"
+    environment:
+      - NODE_ENV=development # ← This is the key to success
+
+volumes:
+  node_modules:
