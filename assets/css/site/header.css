@@ -3,6 +3,10 @@
     font-weight: 800;
 }
 
+.gh-head-logo img{
+    max-height: 50px;
+}
+
 .gh-head-menu,
 .gh-head-actions {
     font-size: 1.5rem;
