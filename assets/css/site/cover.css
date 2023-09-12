@@ -55,6 +55,7 @@ body:not(.with-full-cover) .cover {
     font-weight: 700;
     line-height: 1.3;
     letter-spacing: -0.01em;
+    word-break: break-word;
 }
 
 .has-serif-title .cover-description {
@@ -98,13 +99,14 @@ body:not(.with-full-cover) .cover {
     bottom: 40px;
     left: 50%;
     z-index: 10;
+    display: none;
     width: 40px;
     height: 40px;
     margin-left: -20px;
 }
 
-.cover.half .cover-arrow {
-    display: none;
+.with-full-cover .cover-arrow {
+    display: inline-flex;
 }
 
 .cover-arrow .icon {
